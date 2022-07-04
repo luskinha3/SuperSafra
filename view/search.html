@@ -1,0 +1,11 @@
+<div class="menuSearch">
+    <form name="searchForm">
+        <input ng-model="busca" type="text" name="search" id="search" placeholder="Busque pelos seus herois favoritos" ng-required="true">
+          
+        <a ng-if="searchForm.search.$valid" ng-href="#!/buscar/{{busca}}">
+            <button  id="search-button" type="button" class="btn" ng-href="">
+                <i class="fas fa-search fa-2x"></i>
+            </button>
+        </a>
+    </form>
+</div>

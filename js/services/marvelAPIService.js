@@ -4,6 +4,13 @@ angular.module("SuperSafra").factory("marvelAPI", function($http, configuracoes)
 	const apiKey = configuracoes.apiKey;
 	const hash = configuracoes.hash;
 
+	var _getHerois = function () {
+		return $http({
+			method: 'GET',
+			url: configuracoes.baseUrl + `?limit=100&ts=${ts}&apikey=${apiKey}&hash=${hash}`
+		})
+	}
+
 	var _getHeroisStartWith = function (busca){
 		return $http({
 			method:'GET',
@@ -14,12 +21,13 @@ angular.module("SuperSafra").factory("marvelAPI", function($http, configuracoes)
 	var _getHeroisById = function (id) {
 		return $http({
 			method:'GET',
-			url: configuracoes.baseUrl + `/${id}&ts=${ts}&apikey=${apiKey}&hash=${hash}`
+			url: configuracoes.baseUrl + `/${id}?&ts=${ts}&apikey=${apiKey}&hash=${hash}`
 		})
 	}
 
 	return {
 		getHeroisStartWith: _getHeroisStartWith,
-		getHeroisById: _getHeroisById
+		getHeroisById: _getHeroisById,
+		getHerois: _getHerois
 	};
 });

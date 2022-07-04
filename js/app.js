@@ -1,1 +1,1 @@
-angular.module("SuperSafra",["ngMessages",'angularUtils.directives.dirPagination','ngRoute']);
+angular.module("SuperSafra",["ngMessages",'angularUtils.directives.dirPagination',"ngRoute"]);
