@@ -84,7 +84,7 @@ body{
 	opacity: 0.90;
 	transition: all 1s;
 	position: relative;
-	
+	justify-content: flex-center;
 }
 
 .col-lg-12 img{
@@ -102,7 +102,7 @@ body{
 .col-lg-12 p{
 
 	padding: 10px;
-	font-size: 50px;
+	font-size: 40px;
 	text-align: center;
 	color: #fefefe;
 	margin-top: 30px;
@@ -125,6 +125,7 @@ body{
 	box-shadow: 2px 2px 10px 1px rgba(0,0,0, 0.3);
 	opacity: 0.90;
 	transition: all 1s;
+	
 }
 
 .col-xs-6.col-md-4 img{
@@ -137,7 +138,7 @@ body{
 	border-radius: 20px;
     border-bottom: 3px solid #ee2027;
 	position: relative;
-	top: 10px;
+	
 	
 }
 .col-xs-6.col-md-4 p{
@@ -180,5 +181,20 @@ th,td{
 	text-align: center;
 }
 
+#paginacao {
+	display: flex;
+    justify-content: flex-center;
+	width: 100px;
+}
+
+#paginacao a{
+	color: #000000;
+	padding: 5px;
+	margin: 10px;
+	position: relative;
+	right: 130px;
+	text-align: center;
+	top: 12px;
+}
 
 

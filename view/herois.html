@@ -1,24 +1,18 @@
-
 <div id="herois">
     <div class="container-xl ">
         <div class="row">
             <div dir-paginate="heroi in herois | itemsPerPage:12 " class="col-xs-6 col-md-4 ">
-                <a ng-href="#!/detalhes/{{heroi.id}}">					
-                    <img class=" w-100  rounded-3 " src="{{heroi.thumbnail.path}}.{{heroi.thumbnail.extension}}"/>
-                </a>	
+                <a ng-href="#!/detalhes/{{heroi.id}}">
+                    <img class=" w-100  rounded-3 " src="{{heroi.thumbnail.path}}.{{heroi.thumbnail.extension}}" />
+                </a>
                 <p>{{heroi.name}}</p>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <dir-pagination-controls
-                max-size="10"
-                auto-hide="true"
-                boundary-links="true"
-                direction-links="true"
-                template-url="view/paginacao.html"
-            ></dir-pagination-controls>
-        </div>		
+    
+    <div class="container" id="paginacao">
+        <dir-pagination-controls max-size="10" auto-hide="true" boundary-links="true" direction-links="true"
+            template-url="view/paginacao.html"></dir-pagination-controls>
     </div>
+
 </div>
