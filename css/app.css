@@ -198,4 +198,20 @@ th,td{
 	top: 12px;
 }
 
+@media (max-width: 400px){
+	.menuSearch{
+		position: relative;
+		right: 40px;
+		 
+	}
+	.menuSearch i{
+		position: relative;
+		left: 310px;
+		bottom: 45px;
+	}
+	#header h3{
+		left: 100px;
+	}	
+}
+
 
